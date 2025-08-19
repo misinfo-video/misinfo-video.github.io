@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="MM 2025 Tutorial: Combating Online Misinformation Videos: Characterization, Detection, and Prevention">
+  <meta name="keywords" content="misinformation videos, fake news detection, generated video detection, multimedia forensics">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MM 2025 Tutorial: Combating Online Misinformation Videos: Characterization, Detection, and Prevention</title>
+
+
+  <!-- Google Fonts & Bulma -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <!-- Academicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">
+                <span style="font-size: 80%">ACM Multimedia 2025 Tutorial:</span><br />
+                Combating Online Misinformation Videos: Characterization, Detection, and Prevention
+            </h1>
+
+          <!-- Authors -->
+        <div class="is-size-5 publication-authors">
+            <table style="margin: 0 auto;">
+                <tr>
+                    <td width="25%" style="text-align:center;padding:3px">
+                        <img width="150" height="150" src="static/imgs/profile_qiangsheng.png" alt="Qiang Sheng">
+                    </td>
+                    <td width="25%" style="text-align:center;padding:3px">
+                        <img width="150" height="150" src="static/imgs/profile-pengqi.jpeg" alt="Peng Qi">
+                    </td>
+                    <td width="25%" style="text-align:center;padding:3px">
+                        <img width="150" height="150" src="static/imgs/profile-tianyunyang.png" alt="Tianyun Yang">
+                    </td>
+                    <td width="25%" style="text-align:center;padding:3px">
+                        <img width="150" height="150" src="static/imgs/profile_yuyanbu.jpg" alt="Yuyan Bu">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">
+                        <a href="https://sheng-qiang.github.io/" target="_blank">Qiang Sheng</a><sup>1</sup>
+                    </td>
+                    <td style="text-align:center">
+                        <a href="https://scholar.google.com/citations?user=cJ85jdEAAAAJ" target="_blank">Peng Qi</a><sup>2</sup>
+                    </td>
+                    <td style="text-align:center">
+                        <a href="https://tianyunyoung.github.io/" target="_blank">Tianyun Yang</a><sup>3</sup>
+                    </td>
+                    <td style="text-align:center">
+                        <a href="https://scholar.google.com/citations?user=i9SLGsEAAAAJ" target="_blank">Yuyan Bu</a><sup>4</sup>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="is-size-5 publication-authors">
+            <table style="margin: 0 auto;">
+                <tr>
+                    <td width="25%" style="text-align:center;padding:3px">
+                        <img width="150" height="150" src="static/imgs/profile_wynnehsu.png" alt="Wynne Hsu">
+                    </td>
+                    <td width="25%" style="text-align:center;padding:3px">
+                        <img width="150" height="150" src="static/imgs/profile_monglilee.jpg" alt="Juan Cao">
+                    </td>
+                    <td width="25%" style="text-align:center;padding:3px">
+                        <img width="150" height="150" src="static/imgs/profile_juancao.jpg" alt="Juan Cao">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">
+                        <a href="https://www.comp.nus.edu.sg/~whsu/" target="_blank">Wynne Hsu</a><sup>2</sup>
+                    </td>
+                    <td style="text-align:center">
+                        <a href="https://www.comp.nus.edu.sg/~leeml/" target="_blank">Mong Li Lee</a><sup>2</sup>
+                    </td>
+                    <td style="text-align:center">
+                        <a href="https://scholar.google.com/citations?user=fSBdNg0AAAAJ" target="_blank">Juan Cao</a><sup>1</sup>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+          <!-- Affiliations -->
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>1</sup>Institute of Computing Technology, Chinese Academy of Sciences</span><br>
+            <span class="author-block"><sup>2</sup>National University of Singapore</span><br>
+            <span class="author-block"><sup>3</sup>Shenzhen Research Institute of Big Data</span><br>
+            <span class="author-block"><sup>4</sup>Beijing Academy of Artificial Intelligence</span>
+          </div>
+
+          <!-- Event info -->
+          <br>
+          <div class="is-size-5 publication-authors">
+            <b>October 27, 2025 | Dublin Royal Convention Centre, Ireland</b>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <b>Slides will be available <a href="slides/MM2025_Tutorial.pdf" target="_blank">here</a>.</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">About this tutorial</h2>
+        <div class="content has-text-justified">
+          <p>
+            The rapid progress of generative AI and the explosive popularity of short-form video platforms (e.g., TikTok, YouTube Shorts) have made it easier than ever to create and spread vivid, persuasive misinformation videos. Detecting and preventing such content has become a critical challenge for the health of online multimedia ecosystems.
+          </p>
+          <p>
+            This half-day tutorial systematically covers:
+          </p>
+          <ul>
+            <li><strong>Characterization</strong> of both AI-generated and human-edited misinformation videos.</li>
+            <li><strong>Detection approaches</strong> tailored for fully generated, manipulated and human-edited videos.</li>
+            <li><strong>Prevention strategies</strong> that apply to both the creation and spreading phases.</li>
+          </ul>
+          <p>
+            We conclude with open challenges and future research directions. The tutorial is designed for attendees with basic knowledge of multimedia forensics and generative AI.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Schedule -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Schedule (To be updated)</h2>
+        <p>All times are local (Dublin, IST).</p>
+
+        <style>
+          .tg {border-collapse:collapse;border-spacing:0;}
+          .tg td,.tg th{border:1px solid #bbb;font-family:Arial,sans-serif;font-size:14px;padding:10px 5px;}
+          .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+        </style>
+        <table class="tg" style="width:100%">
+          <thead>
+            <tr>
+              <th class="tg-0pky">Time</th>
+              <th class="tg-0pky">Section</th>
+              <th class="tg-0pky">Presenter</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg-0pky">/</td>
+              <td class="tg-0pky">Introduction & Motivation</td>
+              <td class="tg-0pky">Qiang Sheng</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">/</td>
+              <td class="tg-0pky">Preliminaries: Video Editing & Generation</td>
+              <td class="tg-0pky">Qiang Sheng</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">/</td>
+              <td class="tg-0pky">Characterization of Misinformation Videos</td>
+              <td class="tg-0pky">Qiang Sheng</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">/</td>
+              <td class="tg-0pky">Detection Part I: AI-Generated Misinformation</td>
+              <td class="tg-0pky">Tianyun Yang</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">/</td>
+              <td class="tg-0pky">Detection Part II: Human-Edited Misinformation</td>
+              <td class="tg-0pky">Yuyan Bu</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">/</td>
+              <td class="tg-0pky">Coffee Break</td>
+              <td class="tg-0pky"></td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">/</td>
+              <td class="tg-0pky">Prevention Strategies</td>
+              <td class="tg-0pky">Peng Qi</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">/</td>
+              <td class="tg-0pky">Conclusion & Open Discussion</td>
+              <td class="tg-0pky">Qiang Sheng</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Reading List (optional placeholder) -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Reading List</h2>
+        <p>Key papers and datasets will be listed on the tutorial webpage. Stay tuned!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BibTeX -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{mm25tutorial,
+  title={Combating Online Misinformation Videos: Characterization, Detection, and Prevention},
+  author={Sheng, Qiang and Qi, Peng and Yang, Tianyun and Bu, Yuyan and Hsu, Wynne and Lee, Mong Li and Cao, Juan},
+  booktitle={Proceedings of the 33rd ACM International Conference on Multimedia},
+  year={2025},
+  doi={10.1145/3746027.3759206},
+  publisher={ACM}
+}</code></pre>
+  </div>
+</section>
+
+<!-- Related Links -->
+<section class="section" id="related-resources">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Related Links</h2>
+      <ul>
+        <li><a href="https://github.com/ICTMCG">GitHub Page of Media Synthesis and Forensics Lab @ ICT, CAS</a></li>
+        <li><a href="static/imgs/wechat_account.png">WeChat Account (in Chinese)</a></li>
+        </ul>
+    </div></section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/misinfo-video" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+              Creative Commons Attribution-ShareAlike 4.0 International License
+            </a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Placeholder images: static/imgs/profile_*.jpg -->
+</body>
+</html>
